@@ -5,6 +5,7 @@ class MainApp
 {
     int WindowX, WindowY;
     sf::RenderWindow Window;
+
     bool bSymulation;
     float symulationSpeed;
 
