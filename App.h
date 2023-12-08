@@ -1,5 +1,7 @@
 #pragma once
 #include <SFML\Graphics.hpp>
+#include "Button.h"
+#include <iostream>
 
 class MainApp
 {
@@ -9,6 +11,7 @@ class MainApp
     bool bSymulation;
     float symulationSpeed;
 
+    Button startButton;
 public:
     MainApp();
     MainApp(int X, int Y);

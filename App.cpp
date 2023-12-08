@@ -7,6 +7,7 @@ MainApp::MainApp()
     Window.create(sf::VideoMode(WindowX, WindowY), "Game of Life");
     bSymulation = false;
     symulationSpeed = 1.0f;
+    startButton = Button(&Window);
 }
 
 MainApp::MainApp(int X, int Y) : WindowX(X), WindowY(Y)
@@ -14,11 +15,21 @@ MainApp::MainApp(int X, int Y) : WindowX(X), WindowY(Y)
     Window.create(sf::VideoMode(WindowX, WindowY), "Game of Life");
     bSymulation = false;
     symulationSpeed = 1.0f;
+    startButton = Button(&Window);
 }
 
 void MainApp::RUN()
 {
     sf::Clock SymulationClock;
+
+    //Button
+    sf::RectangleShape ButtonBoard(sf::Vector2f(300, WindowY));
+    ButtonBoard.setPosition(WindowX - 300, 0);
+    ButtonBoard.setFillColor(sf::Color(128, 128, 128));
+    
+    startButton.setSize(200, 100);
+    startButton.setPosition(WindowX - 250, 100);
+    startButton.setButtonActon([]() {std::cout << "Button" << std::endl; });
 
     while (Window.isOpen()) {
 
@@ -26,13 +37,10 @@ void MainApp::RUN()
 
         Window.clear(sf::Color::Black);
 
-        //Button
-        {
-            sf::RectangleShape ButtonBoard(sf::Vector2f(300, WindowY));
-            ButtonBoard.setPosition(WindowX - 300, 0);
-            ButtonBoard.setFillColor(sf::Color(128, 128, 128));
-            Window.draw(ButtonBoard);
-        }
+        //Button   
+        Window.draw(ButtonBoard);
+        startButton.draw();
+        
 
         if (bSymulation && SymulationClock.getElapsedTime().asSeconds() >= symulationSpeed)
         {
@@ -52,6 +60,7 @@ void MainApp::Events()
         {
             Window.close();
         }
+        startButton.Event(event);
     }
 }
 

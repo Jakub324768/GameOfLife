@@ -1,6 +1,9 @@
 #include "Button.h"
 
-Button::Button() {};
+Button::Button()
+{
+	window = nullptr;
+}
 
 Button::Button(sf::RenderWindow* Window) : window(Window)
 {
@@ -31,7 +34,18 @@ void Button::setPosition(int x, int y)
 
 bool Button::Event(sf::Event event)
 {
+	if (event.type == sf::Event::MouseButtonPressed)
+	{
+		if (event.mouseButton.button == sf::Mouse::Left)
+		{
+			if (event.mouseButton.x >= X && event.mouseButton.x <= X + width && event.mouseButton.y >= Y && event.mouseButton.y <= Y + height)
+			{
+				fun();
+				return true;
+			}
 
+		}
+	}
 
 	return false;
 }
