@@ -1,8 +1,2 @@
-﻿  App.cpp
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(26,54): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
-          with
-          [
-              T=float
-          ]
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(27,37): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+﻿  GameOfLife.cpp
   GameOfLife.vcxproj -> C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\x64\Debug\GameOfLife.exe

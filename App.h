@@ -12,6 +12,11 @@ class MainApp
     float symulationSpeed;
 
     Button startButton;
+    Button stopButton;
+    Button increaseTimeSpeedButton;
+    Button decreaseTimeSpeedButton;
+
+    void DrawLattice();
 public:
     MainApp();
     MainApp(int X, int Y);

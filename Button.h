@@ -29,5 +29,7 @@ public:
 	bool Event(sf::Event event);
 
 	void draw();
+
+	sf::RectangleShape& GetButtonShape() { return ButtonShape; };
 };
 
