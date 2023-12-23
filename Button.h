@@ -1,12 +1,9 @@
 #pragma once
 #include <SFML\Graphics.hpp>
-#include <functional>
 
 class Button
 {
 	sf::RenderWindow* window;
-
-	std::function<void()> fun;
 
 	// Pozycja.
 	int X = 0, Y = 0;
@@ -19,8 +16,6 @@ class Button
 public:
 	Button();
 	Button(sf::RenderWindow* Window);
-
-	void setButtonActon(std::function<void()> action) { fun = action; };
 
 	void setSize(int Width, int Height);
 

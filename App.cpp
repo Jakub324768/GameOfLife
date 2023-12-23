@@ -42,21 +42,21 @@ void MainApp::RUN()
     
     startButton.setSize(100, 100);
     startButton.setPosition(WindowX - 125, 50);
-    startButton.setButtonActon([]() {std::cout << "Button" << std::endl; });
     startButton.GetButtonShape().setFillColor(sf::Color::Green);
 
     stopButton.setSize(100, 100);
     stopButton.setPosition(WindowX - 125, 200);
-    stopButton.setButtonActon([]() {std::cout << "Button" << std::endl; });
     stopButton.GetButtonShape().setFillColor(sf::Color::Red);
 
     increaseTimeSpeedButton.setSize(100, 100);
     increaseTimeSpeedButton.setPosition(WindowX - 125, 350);
-    increaseTimeSpeedButton.setButtonActon([]() {std::cout << "Button" << std::endl; });
 
     decreaseTimeSpeedButton.setSize(100, 100);
     decreaseTimeSpeedButton.setPosition(WindowX - 125, 600);
-    decreaseTimeSpeedButton.setButtonActon([]() {std::cout << "Button" << std::endl; });
+
+
+    sf::RectangleShape cube(sf::Vector2f(4, 4));
+    cube.setFillColor(sf::Color::Green);
 
     while (Window.isOpen()) {
         Events();
@@ -77,6 +77,13 @@ void MainApp::RUN()
             SymulationClock.restart();
             Symulation();
         }
+
+        for (auto T : cubeTab)
+        {
+            cube.setPosition((T.x - X0) * 5, (T.y - Y0) * 5);
+            Window.draw(cube);
+        }
+
         Window.display();
     }
 }
@@ -89,15 +96,62 @@ void MainApp::Events()
         {
             Window.close();
         }
-        startButton.Event(event);
-        stopButton.Event(event);
-        increaseTimeSpeedButton.Event(event);
-        decreaseTimeSpeedButton.Event(event);
+        else if (startButton.Event(event))
+        {
+            StartSymulaton();
+        }
+        else if (stopButton.Event(event))
+        {
+            StopSymulation();
+        }
+        else if (increaseTimeSpeedButton.Event(event))
+        {
+            IncreaseSymulationTimeSpeed();
+        }
+        else if (decreaseTimeSpeedButton.Event(event))
+        {
+            DecreaseSymulationTimeSpeedButton();
+        }
+        else if (event.type == sf::Event::KeyPressed)
+        {
+            if (event.key.code == sf::Keyboard::Escape)
+            {
+                Window.clear();
+            }
+            else if (event.key.code == sf::Keyboard::Up)
+            {
+                Y0 += MoveSpeed;
+            }
+            else if (event.key.code == sf::Keyboard::Down)
+            {
+                Y0 -= MoveSpeed;
+            }
+            else if (event.key.code == sf::Keyboard::Left)
+            {
+                X0 += MoveSpeed;
+            }
+            else if (event.key.code == sf::Keyboard::Right)
+            {
+                X0 -= MoveSpeed;
+            }
+            else if (event.key.code == sf::Keyboard::Add)
+            {
+                if(MoveSpeed < 100)
+                MoveSpeed++;
+            }
+            else if (event.key.code == sf::Keyboard::Subtract)
+            {
+                if (MoveSpeed > 1)
+                    MoveSpeed--;
+            }
+        }
     }
 }
 
 void MainApp::Symulation()
 {
+    
+
 
 }
 

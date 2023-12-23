@@ -40,7 +40,6 @@ bool Button::Event(sf::Event event)
 		{
 			if (event.mouseButton.x >= X && event.mouseButton.x <= X + width && event.mouseButton.y >= Y && event.mouseButton.y <= Y + height)
 			{
-				fun();
 				return true;
 			}
 

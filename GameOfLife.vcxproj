@@ -154,12 +154,10 @@
     <ClCompile Include="App.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="GameOfLife.cpp" />
-    <ClCompile Include="LifeAlgorytm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="Button.h" />
-    <ClInclude Include="LifeAlgorytm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
