@@ -1,44 +1,44 @@
 ﻿  App.cpp
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(41,54): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(39,54): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(42,37): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(85,57): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(85,41): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(166,37): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(40,37): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(85,61): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(85,45): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(185,37): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(167,39): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(186,39): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(167,37): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(186,37): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(175,39): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(194,39): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(176,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(195,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
-C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(176,45): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(195,45): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
           with
           [
               T=float
           ]
   Trwa generowanie kodu
-  1 of 96 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
+  2 of 101 functions ( 2.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     1 functions had inline decision re-evaluated but remain unchanged
   Zakończono generowanie kodu

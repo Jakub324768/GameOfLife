@@ -28,6 +28,7 @@ class MainApp
     void Symulation();
 
     std::vector<sf::Vector2i> cubeTab;
+    bool mouseAddCube(int x, int y);
 public:
     MainApp();
     MainApp(int X, int Y);

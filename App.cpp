@@ -80,8 +80,11 @@ void MainApp::RUN()
 
         for (auto T : cubeTab)
         {
-            cube.setPosition((T.x - X0) * 5, (T.y - Y0) * 5);
-            Window.draw(cube);
+            if (T.x - X0 >= 0 && T.x - X0 < 270 && T.y - Y0 >= 0 && T.y - Y0 < 160)
+            {
+                cube.setPosition((T.x - X0) * 5, (T.y - Y0) * 5);
+                Window.draw(cube);
+            }
         }
 
         Window.display();
@@ -145,7 +148,25 @@ void MainApp::Events()
                     MoveSpeed--;
             }
         }
+        else if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left)
+        {
+            if (event.mouseButton.x < 1650)
+            {
+                mouseAddCube(event.mouseButton.x / 5, event.mouseButton.y / 5);
+            }
+        }
     }
+}
+
+bool MainApp::mouseAddCube(int x,int y)
+{
+    sf::Vector2i tym(x + X0, y + Y0);
+    for (auto i : cubeTab)
+    {
+        if (i == tym)
+            return false;
+    }
+    cubeTab.push_back(tym);
 }
 
 void MainApp::Symulation()
