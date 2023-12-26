@@ -76,6 +76,7 @@ void MainApp::RUN()
         {
             SymulationClock.restart();
             Symulation();
+            std::cout << "SYM" << std::endl;
         }
 
         for (auto T : cubeTab)
@@ -169,12 +170,89 @@ bool MainApp::mouseAddCube(int x,int y)
     cubeTab.push_back(tym);
 }
 
+//Symulation code begin.
+
+bool IsLive(const std::vector<sf::Vector2i>& tab, sf::Vector2i cube)
+{
+    int neighbor_amount = -1;
+    for (auto T : tab)
+    {
+        if (T.x >= cube.x - 1 && T.x <= cube.x + 1 && T.y >= cube.y - 1 && T.y <= cube.y + 1)
+        {
+            neighbor_amount++;
+        }
+    }
+    if (neighbor_amount == 2 || neighbor_amount == 3)
+    {
+        return true;
+    }
+    return false;
+}
+
+bool IsNew(const std::vector<sf::Vector2i>& tab, sf::Vector2i cube)
+{
+    int neighbor_amount = -1;
+    for (auto T : tab)
+    {
+        if (T.x >= cube.x - 1 && T.x <= cube.x + 1 && T.y >= cube.y - 1 && T.y <= cube.y + 1)
+        {
+            neighbor_amount++;
+        }
+    }
+    if (neighbor_amount == 3)
+    {
+        return true;
+    }
+    return false;
+}
+
+bool IsInTab(const std::vector<sf::Vector2i>& tab, sf::Vector2i cube)
+{
+    for (auto i : tab)
+    {
+        if (i == cube)
+            return true;
+    }
+    return false;
+}
+
 void MainApp::Symulation()
 {
-    
+    std::vector<sf::Vector2i> NewTab;
 
+    for (auto T : cubeTab)
+    {
+        if (IsLive(cubeTab, T))
+        {
+            NewTab.push_back(T);
+        }
+        sf::Vector2i newCubeTab[8] =
+        {
+            sf::Vector2i(T.x - 1, T.y + 1),
+            sf::Vector2i(T.x, T.y + 1),
+            sf::Vector2i(T.x + 1, T.y + 1),
+            sf::Vector2i(T.x - 1, T.y),
+            sf::Vector2i(T.x + 1, T.y),
+            sf::Vector2i(T.x - 1, T.y - 1),
+            sf::Vector2i(T.x, T.y - 1),
+            sf::Vector2i(T.x + 1, T.y - 1)
+        };
+        for (auto I : newCubeTab)
+        {
+            if (!IsInTab(cubeTab, I))
+            {
+                if (IsNew(cubeTab, I))
+                {
+                    NewTab.push_back(I);
+                }
+            }
+        }
+    }
 
+    cubeTab = NewTab;
 }
+
+//Symulation code end.
 
 void MainApp::DrawLattice()
 {
