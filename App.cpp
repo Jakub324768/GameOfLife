@@ -76,7 +76,6 @@ void MainApp::RUN()
         {
             SymulationClock.restart();
             Symulation();
-            std::cout << "SYM" << std::endl;
         }
 
         for (auto T : cubeTab)
@@ -191,7 +190,7 @@ bool IsLive(const std::vector<sf::Vector2i>& tab, sf::Vector2i cube)
 
 bool IsNew(const std::vector<sf::Vector2i>& tab, sf::Vector2i cube)
 {
-    int neighbor_amount = -1;
+    int neighbor_amount = 0;
     for (auto T : tab)
     {
         if (T.x >= cube.x - 1 && T.x <= cube.x + 1 && T.y >= cube.y - 1 && T.y <= cube.y + 1)
@@ -239,7 +238,7 @@ void MainApp::Symulation()
         };
         for (auto I : newCubeTab)
         {
-            if (!IsInTab(cubeTab, I))
+            if (!IsInTab(cubeTab, I) && !IsInTab(NewTab, I))
             {
                 if (IsNew(cubeTab, I))
                 {
