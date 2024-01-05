@@ -29,6 +29,10 @@ class MainApp
 
     std::vector<sf::Vector2i> cubeTab;
     bool mouseAddCube(int x, int y);
+
+    sf::Font font;
+    sf::Text speedText;
+    sf::Text fpsText;
 public:
     MainApp();
     MainApp(int X, int Y);

@@ -1,0 +1,45 @@
+﻿  App.cpp
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(67,54): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(68,37): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(113,61): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(113,45): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(296,37): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(297,39): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(297,37): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(305,39): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(306,51): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(306,45): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+  Trwa generowanie kodu
+  1 of 208 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Zakończono generowanie kodu
+  GameOfLife.vcxproj -> C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\x64\Release\GameOfLife.exe

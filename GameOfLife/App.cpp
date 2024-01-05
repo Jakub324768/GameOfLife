@@ -15,6 +15,19 @@ MainApp::MainApp()
     stopButton = Button(&Window);
     increaseTimeSpeedButton = Button(&Window);
     decreaseTimeSpeedButton = Button(&Window);
+
+    if (!font.loadFromFile("TBPROAR.TTF"))
+    {
+        std::cout << "ERROR(Font)\n";
+    }
+
+    speedText.setFont(font);
+    speedText.setCharacterSize(30);
+    speedText.setPosition(1390, 520);
+
+    fpsText.setFont(font);
+    fpsText.setCharacterSize(30);
+    fpsText.setPosition(1430, 5);
 }
 
 MainApp::MainApp(int X, int Y) : WindowX(X), WindowY(Y)
@@ -28,12 +41,27 @@ MainApp::MainApp(int X, int Y) : WindowX(X), WindowY(Y)
     stopButton = Button(&Window);
     increaseTimeSpeedButton = Button(&Window);
     decreaseTimeSpeedButton = Button(&Window);
+
+    if (!font.loadFromFile("TBPROAR.TTF"))
+    {
+        std::cout << "ERROR(Font)\n";
+    }
+
+    speedText.setFont(font);
+    speedText.setCharacterSize(30);
+    speedText.setPosition(1390, 520);
+
+    fpsText.setFont(font);
+    fpsText.setCharacterSize(30);
+    fpsText.setPosition(1430, 5);
 }
 
 void MainApp::RUN()
 {
     sf::Clock SymulationClock;
-    
+    sf::Clock FPSClock;
+
+    Window.setFramerateLimit(120);
 
     //Button
     sf::RectangleShape ButtonBoard(sf::Vector2f(150, WindowY));
@@ -86,6 +114,12 @@ void MainApp::RUN()
                 Window.draw(cube);
             }
         }
+        
+        speedText.setString(std::to_string(int(100 * (1.1f - symulationSpeed))) + "%");
+        fpsText.setString(std::to_string(int(1.0f/FPSClock.restart().asSeconds())));
+
+        Window.draw(speedText);
+        Window.draw(fpsText);
 
         Window.display();
     }
