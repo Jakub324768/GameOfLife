@@ -5,9 +5,10 @@ Button::Button()
 	window = nullptr;
 }
 
-Button::Button(sf::RenderWindow* Window) : window(Window)
+Button::Button(sf::RenderWindow* Window, ButtonType Type) : window(Window)
 {
 	ButtonShape.setFillColor(sf::Color::Blue);
+	type = Type;
 }
 
 void Button::setSize(int Width, int Height)
@@ -52,4 +53,52 @@ bool Button::Event(sf::Event event)
 void Button::draw()
 {
 	window->draw(ButtonShape);
+ 
+	if (type != ButtonType::null)
+	{
+		sf::Vertex* vertex = nullptr;
+		switch (type)
+		{
+		case ButtonType::play:
+			vertex = new sf::Vertex[3];
+			vertex[0] = sf::Vertex(sf::Vector2f(X+0.1*width, Y+0.1*height), sf::Color::Black);
+			vertex[1] = sf::Vertex(sf::Vector2f(X+width-0.1*width, Y+0.5*height), sf::Color::Black);
+			vertex[2] = sf::Vertex(sf::Vector2f(X+0.1*width, Y+height-0.1*height), sf::Color::Black);
+			window->draw(vertex, 3, sf::Triangles);
+			delete[] vertex;
+			break;
+		case ButtonType::pause:
+			vertex = new sf::Vertex[8];
+			vertex[0] = sf::Vertex(sf::Vector2f(X + 0.2 * width, Y + 0.1 * height), sf::Color::Black);
+			vertex[1] = sf::Vertex(sf::Vector2f(X + 0.2 * width, Y + height - 0.1 * height), sf::Color::Black);
+			vertex[2] = sf::Vertex(sf::Vector2f(X + 0.45 * width, Y + height - 0.1 * height), sf::Color::Black);
+			vertex[3] = sf::Vertex(sf::Vector2f(X + 0.45 * width, Y + 0.1 * height), sf::Color::Black);
+			vertex[4] = sf::Vertex(sf::Vector2f(X + 0.55 * width, Y + 0.1 * height), sf::Color::Black);
+			vertex[5] = sf::Vertex(sf::Vector2f(X + 0.55 * width, Y + height - 0.1 * height), sf::Color::Black);
+			vertex[6] = sf::Vertex(sf::Vector2f(X + 0.8 * width, Y + height - 0.1 * height), sf::Color::Black);
+			vertex[7] = sf::Vertex(sf::Vector2f(X + 0.8 * width, Y + 0.1 * height), sf::Color::Black);
+			window->draw(vertex, 8, sf::Quads);
+			delete[] vertex;
+			break;
+		case ButtonType::up:
+			vertex = new sf::Vertex[3];
+			vertex[0] = sf::Vertex(sf::Vector2f(X + 0.1 * width, Y + height - 0.1 * height), sf::Color::Black);
+			vertex[1] = sf::Vertex(sf::Vector2f(X + width - 0.1 * width, Y + height - 0.1 * height), sf::Color::Black);
+			vertex[2] = sf::Vertex(sf::Vector2f(X + 0.5 * width, Y + 0.1 * height), sf::Color::Black);
+			window->draw(vertex, 3, sf::Triangles);
+			delete[] vertex;
+			break;
+		case ButtonType::down:
+			vertex = new sf::Vertex[3];
+			vertex[0] = sf::Vertex(sf::Vector2f(X + 0.1 * width, Y + 0.1 * height), sf::Color::Black);
+			vertex[1] = sf::Vertex(sf::Vector2f(X + width - 0.1 * width, Y + 0.1 * height), sf::Color::Black);
+			vertex[2] = sf::Vertex(sf::Vector2f(X + 0.5 * width, Y + height - 0.1 * height), sf::Color::Black);
+			window->draw(vertex, 3, sf::Triangles);
+			delete[] vertex;
+			break;
+		default:
+			break;
+		}
+		
+	}
 }

@@ -37,9 +37,192 @@ C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\App.cpp(306,45): warni
           [
               T=float
           ]
+  Button.cpp
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(21,43): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(21,36): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(32,30): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(32,27): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(64,54): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(64,41): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(65,60): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(65,47): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(66,61): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(66,41): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(72,59): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(72,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(73,68): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(73,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(74,69): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(74,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(75,60): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(75,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(76,60): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(76,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(77,69): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(77,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(78,68): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(78,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(79,59): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(79,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(85,68): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(85,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(86,76): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(86,50): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(87,59): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(87,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(93,59): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(93,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(94,67): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(94,50): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(95,68): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\GameOfLife\Button.cpp(95,42): warning C4244: "argument": konwersja z "double" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
   Trwa generowanie kodu
-  1 of 208 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
+  2 of 209 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    6 functions had inline decision re-evaluated but remain unchanged
   Zakończono generowanie kodu
   GameOfLife.vcxproj -> C:\Users\Jakub\Documents\ProjectCpp\GameOfLife\x64\Release\GameOfLife.exe

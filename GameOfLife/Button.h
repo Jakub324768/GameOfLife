@@ -1,6 +1,15 @@
 #pragma once
 #include <SFML\Graphics.hpp>
 
+enum class ButtonType : unsigned char
+{
+	null,
+	play,
+	pause,
+	up,
+	down
+};
+
 class Button
 {
 	sf::RenderWindow* window;
@@ -13,9 +22,11 @@ class Button
 
 	sf::RectangleShape ButtonShape;
 
+	ButtonType type = ButtonType::null;
+
 public:
 	Button();
-	Button(sf::RenderWindow* Window);
+	Button(sf::RenderWindow* Window, ButtonType Type = ButtonType::null);
 
 	void setSize(int Width, int Height);
 

@@ -11,10 +11,10 @@ MainApp::MainApp()
     bSymulation = false;
     symulationSpeed = 1.0f;
 
-    startButton = Button(&Window);
-    stopButton = Button(&Window);
-    increaseTimeSpeedButton = Button(&Window);
-    decreaseTimeSpeedButton = Button(&Window);
+    startButton = Button(&Window,ButtonType::play);
+    stopButton = Button(&Window, ButtonType::pause);
+    increaseTimeSpeedButton = Button(&Window, ButtonType::up);
+    decreaseTimeSpeedButton = Button(&Window, ButtonType::down);
 
     if (!font.loadFromFile("TBPROAR.TTF"))
     {
@@ -37,10 +37,10 @@ MainApp::MainApp(int X, int Y) : WindowX(X), WindowY(Y)
     bSymulation = false;
     symulationSpeed = 1.0f;
 
-    startButton = Button(&Window);
-    stopButton = Button(&Window);
-    increaseTimeSpeedButton = Button(&Window);
-    decreaseTimeSpeedButton = Button(&Window);
+    startButton = Button(&Window, ButtonType::play);
+    stopButton = Button(&Window, ButtonType::pause);
+    increaseTimeSpeedButton = Button(&Window, ButtonType::up);
+    decreaseTimeSpeedButton = Button(&Window, ButtonType::down);
 
     if (!font.loadFromFile("TBPROAR.TTF"))
     {
